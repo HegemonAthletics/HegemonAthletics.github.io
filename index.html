@@ -61,9 +61,9 @@
 	
 	<script type="text/javascript">
        		function showMailingPopUp() {
-           		window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us19.list-manage.com","uuid":"a3f66ff0081486a5b561e5bed","lid":"e578a105d6","uniqueMethods":true}) })
-           			document.cookie = "MCPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";    
-           			document.cookie = "MCPopupSubscribed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
+           		require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us19.list-manage.com","uuid":"a3f66ff0081486a5b561e5bed","lid":"e578a105d6","uniqueMethods":true}) })
+           		document.cookie = "MCPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";    
+           		document.cookie = "MCPopupSubscribed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
     		};
    	 $(function() {
        		$(".open-popup").on('click', function() { 
@@ -71,7 +71,7 @@
          
     		});
   	});
-</script>
+	</script>
 
 </body>
 </html>
