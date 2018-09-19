@@ -17,6 +17,9 @@
 	<link href="css/styles.css" rel="stylesheet">	
 	<link href="css/responsive.css" rel="stylesheet">
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	
 	<!-- Favicons -->
 	<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
@@ -46,7 +49,7 @@
 				<p class="desc font-white">Our website is currently under construction.</p>
 				<p class="desc font-white">Click "Notify Me" to stay up to date.</p>
 				
-				<a class="notify-btn" id="open-popup" href="#"><b>NOTIFY ME</b></a>
+				<a class="notify-btn" data-toggle="modal" data-target="#myModal"><b>NOTIFY ME</b></a>
 				
 				<ul class="social-btn font-white">
 					<li><a href="https://www.facebook.com/HegemonAthletics">Facebook</a></li>
@@ -74,6 +77,27 @@
     		});
   	});
 	</script>
+	
+	<!-- Modal Scheduling Window -->
+	  <div class="modal fade" id="myModal" role="dialog">
+	    <div class="modal-dialog modal-lg">
+
+	      <!-- Modal content-->
+	      <div class="modal-content">
+		<div class="modal-header">
+		  <button type="button" class="close" data-dismiss="modal">&times;</button>
+		  <h4 class="modal-title">Yeah, we know.</h4>
+		</div>
+		<div class="modal-body">
+		  <p>It's still broken. Come back later.</p>
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		</div>
+	      </div>
+
+	    </div>
+	  </div>
 
 </body>
 </html>
